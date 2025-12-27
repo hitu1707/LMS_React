@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 
 // Import components
@@ -21,7 +21,7 @@ function App() {
   const [user, setUser] = useState(null)
 
   return (
-    <Router basename="/LMS_React/">
+    <Router >
       {/* Toast Container */}
       <Toaster
         position="top-right"
