@@ -21,7 +21,7 @@ function App() {
   const [user, setUser] = useState(null)
 
   return (
-    <Router>
+    <Router basename="/LMS_React/">
       {/* Toast Container */}
       <Toaster
         position="top-right"
